@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:openDrawer="end"
+    android:id="@+id/drawer"
+    android:background="#ffff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle"
+        android:orientation="horizontal"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+<TextView
+    android:layout_width="100dp"
+    android:layout_height="20dp"
+    android:text="Horizontal SCROLL ->"
+   android:layout_marginTop="300dp"
+    android:textColor="#000"
+    android:textSize="15sp"
+    android:layout_marginLeft="10dp"
+
+    />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="#ffff">
+
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/insta"
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="320dp"
+        android:layout_marginBottom="170dp"
+        android:src="@drawable/insta1"/>
+
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="20dp"
+        android:text="Visit out social media pages"
+        />
+
+    <ImageView
+        android:id="@+id/tweet"
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="320dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/twitter"
+        />
+    <ImageView
+        android:id="@+id/linkedin"
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="610dp"
+        android:layout_marginRight="320dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/lin"
+        />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationview"
+        app:menu="@menu/menu_item"
+        app:headerLayout="@layout/header"
+        android:background="@color/c3"
+        app:itemTextColor="#fff"
+        android:layout_gravity="start"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

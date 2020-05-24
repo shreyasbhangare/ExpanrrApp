@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Expanrr</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="exit" />
+    <string name="exit_message">Are you sure?</string>
+</resources>
